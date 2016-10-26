@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - exit 0
+
+test:
+  override:
+    - docker run busybox ls -la
